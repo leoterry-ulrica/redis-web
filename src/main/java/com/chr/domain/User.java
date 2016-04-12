@@ -3,8 +3,9 @@ package com.chr.domain;
 import java.io.Serializable;
 
 /**
- * @author Edwin Chen
- *
+ * 用户模型
+ * @author weifj
+ * @version 1.0，2016/04/12，weifj，创建
  */
 public class User implements Serializable {
 	

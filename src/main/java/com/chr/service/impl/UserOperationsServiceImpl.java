@@ -26,16 +26,7 @@ public class UserOperationsServiceImpl implements UserOperationsService {
 
 	@Override
 	public void add(User user) {
-		// TODO Auto-generated method stub
-		/*
-		 * boolean result = redisTemplate.execute(new RedisCallback<Boolean>() {
-		 * public Boolean doInRedis(RedisConnection redisConnection) throws
-		 * DataAccessException { RedisSerializer<String> redisSerializer =
-		 * redisTemplate .getStringSerializer(); byte[] key =
-		 * redisSerializer.serialize(user.getId()); byte[] value =
-		 * redisSerializer.serialize(user.getName()); return
-		 * redisConnection.setNX(key, value); } }); return result;
-		 */
+
 		ValueOperations<String, User> valueops = redisTemplate
 				.opsForValue();
 		valueops.set(user.getId(), user);

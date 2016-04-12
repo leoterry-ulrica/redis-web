@@ -11,8 +11,9 @@ import com.chr.domain.User;
 import com.chr.service.impl.UserOperationsServiceImpl;
 
 /**
- * @author Edwin Chen
- *
+ * 用户控制器
+ * @author weifj
+ * @version 1.0，2016/04/12，weifj，创建控制器
  */
 @Controller
 @RequestMapping(value = "/redis")

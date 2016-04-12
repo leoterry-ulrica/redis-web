@@ -10,8 +10,7 @@ import com.chr.domain.User;
 import com.chr.service.impl.UserOperationsServiceImpl;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = { "classpath:config/spring-context.xml",
-		"classpath:config/redis-context.xml" })
+@ContextConfiguration(locations = { "classpath:config/spring-context.xml", "classpath:config/redis-context.xml" })
 public class RedisTest {
 
 	@Autowired
@@ -23,7 +22,6 @@ public class RedisTest {
 		userops.add(user);
 		User user1 = userops.getUser(user.getId());
 		System.out.println(user1);
-		System.out.println(user1.getId() + user1.getName()
-				+ user1.getPassword());
+		System.out.println(user1.getId() + user1.getName() + user1.getPassword());
 	}
 }
