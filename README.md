@@ -18,3 +18,6 @@ redis命令手册：http://doc.redisfans.com/
 
 #### >2016/04/12
 1. 基于spring-data-redis-1.0.2
+
+#### >2017/01/07
+1. 测试分支
